@@ -64,7 +64,7 @@ public class TestService implements TestApi {
 				JSONObject project = allProjects.getJSONObject(i);
 				int id = project.getInt("id");
 				String name = project.getString("name_with_namespace");
-				Project p = new Project(id, open_issues_count, name, null, null);
+				Project p = new Project(id, 0, name, null, null);
 				projects.add(p);
 			}
 		} catch (IOException e) {
