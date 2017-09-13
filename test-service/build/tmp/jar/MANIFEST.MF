@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: test-service
+Bundle-SymbolicName: com.testservice
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_144 (Oracle Corporation)
+Import-Package: Test.api.api;version="[1.0,2)",com.liferay.portal.kern
+ el.json;version="[7.0,8)",org.apache.commons.httpclient;version="[3.1
+ ,4)",org.apache.commons.httpclient.methods;version="[3.1,4)",org.apac
+ he.commons.httpclient.params;version="[3.1,4)"
+Javac-Debug: on
+Javac-Deprecation: off
+Javac-Encoding: Cp1253
+Private-Package: com.testservice
+Provide-Capability: osgi.service;objectClass:List<String>="Test.api.ap
+ i.TestApi"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.testservice.TestService.xml
+Tool: Bnd-3.2.0.201605172007

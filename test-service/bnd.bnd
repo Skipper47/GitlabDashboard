@@ -1,0 +1,3 @@
+Bundle-Name: test-service
+Bundle-SymbolicName: com.testservice
+Bundle-Version: 1.0.0
