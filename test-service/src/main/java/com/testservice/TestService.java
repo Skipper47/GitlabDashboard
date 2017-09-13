@@ -63,7 +63,6 @@ public class TestService implements TestApi {
 			for (int i = 0; i < allProjects.length(); i++) {
 				JSONObject project = allProjects.getJSONObject(i);
 				int id = project.getInt("id");
-				int open_issues_count = project.getInt("open_issues_count");
 				String name = project.getString("name_with_namespace");
 				Project p = new Project(id, open_issues_count, name, null, null);
 				projects.add(p);
